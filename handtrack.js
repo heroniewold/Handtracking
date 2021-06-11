@@ -16,7 +16,7 @@ function startVideo() {
         if (status) {
            
             isVideo = true
-            runDetection()
+            
         } 
     });
 }
