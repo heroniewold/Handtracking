@@ -1,4 +1,4 @@
-const video = document.getElementById("video");
+const video = document.getElementById("#video");
 
 let isVideo = false;
 let model = null;
@@ -20,6 +20,8 @@ function startVideo() {
         } 
     });
 }
+startVideo();
+
 
 function runDetection() {
     model.detect(video).then(predictions => {
