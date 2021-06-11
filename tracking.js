@@ -1,4 +1,8 @@
-navigator.getUserMedia;
+navigator.getUserMedia =
+    navigator.getUserMedia ||
+    navigator.webkitGetUserMedia ||
+    navigator.mozGetUserMedia ||
+    navigator.msGetUserMedia;
 
 const defaultParams = {
     flipHorizontal: false,
@@ -11,7 +15,6 @@ const defaultParams = {
     modelSize: "large",
     bboxLineWidth: "2",
     fontSize: 17,
-    videoHeight: 400
 };
 
 const video = document.querySelector('#video');
